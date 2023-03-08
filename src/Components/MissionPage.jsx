@@ -1,21 +1,20 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Divider, Stack, Text } from '@chakra-ui/react'
 import React from 'react'
+import Milestones from './Milestone'
+import Vision from './vIsion'
 
 const MissionPage = () => {
   return (
     <Box>
-        <Box  >
+      <Stack  textAlign='left' ml={'30px'} marginTop='60px'>
+        <Text fontSize={"2xl"} as='b' color={'green'}>
+          About us
+        </Text>
+        <Divider marginTop='-20px' width={'100px'} height='7px' bg='red' fontSize='30px'/>
 
-        <Box mt="40px" display="flex" h="500px" border="1px solid red"  justifyContent="space-around" w="100%">
-            <Box border="1px solid Black" w="50%" ml="30px">
-
-            </Box>
-            <Box border="1px solid Black" w="35%">
-
-            </Box>
-         </Box>
-
-        </Box>
+      </Stack>
+      <Vision />
+       <Milestones />
          
 
     </Box>

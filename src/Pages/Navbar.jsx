@@ -9,7 +9,6 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -24,6 +23,7 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure();
@@ -96,7 +96,7 @@ const DesktopNav = () => {
               <PopoverTrigger>
                 <Link
                   p={2}
-                  href={navItem.href ?? '#'}
+                  to={navItem.href ?? '#'}
                   fontSize={'sm'}
                   fontWeight={500}
                   color={linkColor}
@@ -131,10 +131,10 @@ const DesktopNav = () => {
   };
 
 
-  const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  const DesktopSubNav = ({ label, href, subLabel }) => {
     return (
       <Link
-        href={href}
+        to={href}
         role={'group'}
         display={'block'}
         p={2}
@@ -178,7 +178,7 @@ const DesktopNav = () => {
     );
   };
   
-  const MobileNavItem = ({ label, children, href }: NavItem) => {
+  const MobileNavItem = ({ label, children, href }) => {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
@@ -218,7 +218,7 @@ const DesktopNav = () => {
             align={'start'}>
             {children &&
               children.map((child) => (
-                <Link key={child.label} py={2} href={child.href}>
+                <Link key={child.label} py={2} to={child.href}>
                   {child.label}
                 </Link>
               ))}
@@ -227,13 +227,7 @@ const DesktopNav = () => {
       </Stack>
     );
   };
-  
-  interface NavItem {
-    label: string;
-    subLabel?: string;
-    children?: Array<NavItem>;
-    href?: string;
-  }
+
   
   const NAV_ITEMS = [
     {
@@ -247,12 +241,12 @@ const DesktopNav = () => {
         {
           label: 'Ongoing Projects',
           // subLabel: 'See our Ongoing Projects ',
-          // href: '/ongoingprojects',
+          href: '/ongoingProjects',
         },
         {
           label: 'Completed Projects',
           // subLabel: 'See our Completed Projects',
-          // href: '/completedProjects',
+          href: '/completedProjects',
         },
       ],
     },
@@ -262,12 +256,12 @@ const DesktopNav = () => {
         {
           label: 'Vision And Mission',
           // subLabel: 'Vision And Mission',
-          href: '/vision',
+          href: '/mission',
         },
         {
           label: 'Financial Report',
           // subLabel: 'An exclusive list for contract work',
-          href: '/financial',
+          href: '/financialreport',
         },
         {
           label: 'CSR',
@@ -283,7 +277,7 @@ const DesktopNav = () => {
     },
     {
       label: 'Equipmets',
-      href: 'equipment',
+      href: 'equipement',
     },
     {
       label: 'Media',

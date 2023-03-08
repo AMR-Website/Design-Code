@@ -137,9 +137,8 @@ const Director = () => {
 
             <Box mt="30px" border="1px solid white" h="auto"  boxshadow=" rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px">
                 <Box >
-                    <Text fontSize="38px" fontFamily="heading" fontWeight="bold" color="red.500">CORE TEAM</Text>
+                    <Text fontSize="30px" fontFamily="heading" fontWeight="bold" color="red.500">CORE TEAM</Text>
 
-                    <div style={{ backgroundColor: "teal", width: "50%", margin: "auto", height: "1px" }} ></div>
 
 
                 </Box>
@@ -150,7 +149,7 @@ const Director = () => {
 
 
                 <Box mt='60px' w="100%" >
-                    <Text fontSize="38px" fontFamily="heading" fontWeight="bold" color="red.500">CORE EXECUTIVE TEAM</Text>
+                    <Text fontSize="30px" fontFamily="heading" fontWeight="bold" color="red.500">CORE EXECUTIVE TEAM</Text>
 
                     {/* <div style={{ backgroundColor: "teal", width: "60%", margin: "auto", height: "1px" }} ></div> */}
                     <Box mt="30px">

@@ -25,7 +25,7 @@ const FinacialReport = () => {
             {
                 label: "Revenue for The Company 2016-2022",
                 data: [1384, 871, 1021, 1099, 618, 745],
-                backgroundColor: "green"
+                backgroundColor: "orangeRed"
             }
         ]
 
