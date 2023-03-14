@@ -249,6 +249,24 @@ const DesktopNav = () => {
           href: '/completedProjects',
         },
       ],
+    },  {
+      label: 'Services',
+      children: [
+        {
+          label: 'Mining',
+          // subLabel: 'See our Ongoing Projects ',
+          href: '/mining',
+        },
+        {
+          label: 'Construction',
+          // subLabel: 'See our Completed Projects',
+          href: '/construction',
+        },        {
+          label: 'Irrigation',
+          // subLabel: 'See our Completed Projects',
+          href: '/irrigation',
+        },
+      ],
     },
     {
       label: 'About us',

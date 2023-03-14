@@ -149,7 +149,7 @@ const Director = () => {
 
 
                 <Box mt='60px' w="100%" >
-                    <Text fontSize="30px" fontFamily="heading" fontWeight="bold" color="red.500">CORE EXECUTIVE TEAM</Text>
+                <Text fontSize="30px" fontFamily="heading" fontWeight="bold" color="red.500">CORE EXECUTIVE TEAM</Text>
 
                     {/* <div style={{ backgroundColor: "teal", width: "60%", margin: "auto", height: "1px" }} ></div> */}
                     <Box mt="30px">
@@ -157,43 +157,51 @@ const Director = () => {
                             <List spacing={3} >
                                 <ListItem fontSize='28px'>
 
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
                                     {/* <Text  fontSize="22px" fontFamily="sans-serif" fontWeight="" color=""  >  Lorem ipsum dolor sit amet, consectetur adipisicing elit</Text> */}
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />                                       Mr A. Mahesh Kumar Reddy Chairman & Managing Director
+ </Text>
 
-                                    Mr A. Mahesh Kumar Reddy Chairman & Managing Director
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr B. Subbarami Reddy Executive Director
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr B. Subbarami Reddy Executive Director </Text>
+
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr Syed Aliuddin Ahmed Irfan Chief Operating Officer
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr Syed Aliuddin Ahmed Irfan Chief Operating Officer </Text>
+
+                                    
                                 </ListItem >
                                 {/* You can also use custom icons from react-icons */}
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr S B Ravindra Chief Financial Officer
+
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr S B Ravindra Chief Financial Officer </Text>
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr D Viswanadha Raju Vice President-Mining
+
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr D Viswanadha Raju Vice President-Mining </Text>
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. A. Prabhakar Reddy, Vice President –Mining
+
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. A. Prabhakar Reddy, Vice President –Mining </Text>
+
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. N Durga Prasad, Vice president – Mining 
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. N Durga Prasad, Vice president – Mining </Text>
+                                   
+                                     
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr Krishna Reddy, Executive Director- Business Development 
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr Krishna Reddy, Executive Director- Business Development </Text>
+
+                                     
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr G Venkata Raman, Company Secretary
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr G Venkata Raman, Company Secretary </Text>
+                                    
                                 </ListItem>
                             </List>
                         </Box>
@@ -205,12 +213,12 @@ const Director = () => {
             </Box>
 
             <Box mt="40px">
-            <Text fontSize="38px" fontFamily="heading" fontWeight="bold" color="red.500">SUPPORTING TEAM</Text>
-            <div style={{ backgroundColor: "teal", width: "100%", margin: "auto", height: "1px" }} ></div>
+            <Text fontSize="30px" fontFamily="heading" mb={'100px'} fontWeight="bold" color="red.500">SUPPORTING TEAM</Text>
+            {/* <div style={{ backgroundColor: "teal", width: "100%", margin: "auto", height: "1px" }} ></div> */}
             </Box>
 
-            <Box mt='40px' w="100%" className='MiningTeam' >
-                    <Text fontSize="38px" fontFamily="heading" fontWeight="bold" color="red.500"> Mining Team</Text>
+            <Box mt='70px' w="100%" className='MiningTeam' >
+                    <Text fontSize="28px" fontFamily="heading" fontWeight="bold" color="red.500"> Mining Team</Text>
 
                     {/* <div style={{ backgroundColor: "teal", width: "60%", margin: "auto", height: "1px" }} ></div> */}
                     <Box mt="20px" boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px" >
@@ -218,35 +226,40 @@ const Director = () => {
                             <List spacing={3} >
                                 <ListItem fontSize='28px'>
 
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
+                                   
                                     {/* <Text  fontSize="22px" fontFamily="sans-serif" fontWeight="" color=""  >  Lorem ipsum dolor sit amet, consectetur adipisicing elit</Text> */}
+                                   
+                               <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />  Mr. N. Durga Prasad, Vice President (BD)</Text>
+                                </ListItem>
+                                <ListItem fontSize='28px'>
+                               <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. T. Sridhar, Vice President</Text>
 
-                                    Mr. N. Durga Prasad, Vice President (BD)
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. T. Sridhar, Vice President 
-                                </ListItem>
-                                <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. G. Venkateswarlu, Sr. General Manager 
+                                    
+                               <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" /> Mr. G. Venkateswarlu, Sr. General Manager</Text>
+
                                 </ListItem >
                                 {/* You can also use custom icons from react-icons */}
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. V. Chandra Mouli, Sr.General Manager 
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. V. Chandra Mouli, Sr.General Manager </Text>
+
+                                  
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. K.S.N. Murthy, General Manager
+                                    
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. K.S.N. Murthy, General Manager  </Text>
+
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. A. Rama Chandra Murthy, Advisor
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. K.S.N. Murthy, General Manager  </Text>
+
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. S. Ravinder, Advisor
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. S. Ravinder, Advisor  </Text>
+
+                                    
                                 </ListItem>
                                 
                             </List>
@@ -270,27 +283,31 @@ const Director = () => {
                             <List spacing={3} >
                                 <ListItem fontSize='28px'>
 
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
                                     {/* <Text  fontSize="22px" fontFamily="sans-serif" fontWeight="" color=""  >  Lorem ipsum dolor sit amet, consectetur adipisicing elit</Text> */}
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. A.K. Jha, Sr. Vice President </Text>
+   
+                                     
+                                </ListItem>
+                                <ListItem fontSize='28px'>
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. S.V.S. Naidu, Vice President </Text>
 
-                                    Mr. A.K. Jha, Sr. Vice President 
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. S.V.S. Naidu, Vice President
-                                </ListItem>
-                                <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. V. Ravi Prasad, Project Head
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. V. Ravi Prasad, Project Head </Text>
+
+                                    
                                 </ListItem >
                                 {/* You can also use custom icons from react-icons */}
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. Mahesh G Badagi, General Manager 
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. Mahesh G Badagi, General Manager </Text>
+
+                                     
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. Mantha Srinivas, General Manager
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. Mantha Srinivas, General Manager </Text>
+
+                                    
                                 </ListItem>
                                
                                 
@@ -312,23 +329,26 @@ const Director = () => {
                             <List spacing={3} >
                                 <ListItem fontSize='28px'>
 
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
                                     {/* <Text  fontSize="22px" fontFamily="sans-serif" fontWeight="" color=""  >  Lorem ipsum dolor sit amet, consectetur adipisicing elit</Text> */}
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. G.V.K. Sitaramaiah, Sr. General Manager </Text>
 
-                                    Mr. G.V.K. Sitaramaiah, Sr. General Manager
+                                    
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. Ramesh Sriramagiri, General Manager
+                                    
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. Ramesh Sriramagiri, General Manager </Text>
+
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. P Siva Nageswar Rao, General Manager
+                                    
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. P Siva Nageswar Rao, General Manager </Text>
+
                                 </ListItem >
                                 {/* You can also use custom icons from react-icons */}
                                 <ListItem fontSize='28px'>
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
-                                    Mr. Asis Kumar Maiti, General Manager
+                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. Asis Kumar Maiti, General Manager </Text>
+
+                                    
                                 </ListItem>
                                 
                                 
@@ -349,10 +369,10 @@ const Director = () => {
                             <List spacing={3} >
                                 <ListItem fontSize='28px'>
 
-                                    <ListIcon as={MdCheckCircle} color='green.500' h="40px" w="70px" />
                                     {/* <Text  fontSize="22px" fontFamily="sans-serif" fontWeight="" color=""  >  Lorem ipsum dolor sit amet, consectetur adipisicing elit</Text> */}
+                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. S. Srinivas Reddy, Head (P & M) </Text>
 
-                                    Mr. S. Srinivas Reddy, Head (P & M)
+                                    
                                 </ListItem>
                                 
                                 

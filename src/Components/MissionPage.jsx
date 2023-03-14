@@ -7,7 +7,7 @@ const MissionPage = () => {
   return (
     <Box>
       <Stack  textAlign='left' ml={'30px'} marginTop='60px'>
-        <Text fontSize={"2xl"} as='b' color={'green'}>
+        <Text fontSize={"3xl"} as='b' color={'Black'} _hover={{ textDecoration: 'none', color:"lightGrey" }}>
           About us
         </Text>
         <Divider marginTop='-20px' width={'100px'} height='7px' bg='red' fontSize='30px'/>

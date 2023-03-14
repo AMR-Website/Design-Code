@@ -13,7 +13,8 @@ import {
   IconProps,
   useColorModeValue,
 } from "@chakra-ui/react";
-
+import { Link } from "react-router-dom";
+import P2 from "../Images/Equipments/Picture4.jpg"
 export default function Aboutus() {
   return (
     <Container maxW={"7xl"}>
@@ -51,6 +52,7 @@ export default function Aboutus() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
+            <Link to="/mission">
             <Button
               rounded={"full"}
               size={"lg"}
@@ -62,9 +64,10 @@ export default function Aboutus() {
             >
               Know More
             </Button>
+            </Link>
           </Stack>
         </Stack>
-        <Flex
+        <Flex 
           flex={1}
           justify={"center"}
           align={"center"}
@@ -106,9 +109,7 @@ export default function Aboutus() {
               align={"center"}
               w={"100%"}
               h={"100%"}
-              src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-              }
+              src={P2 }
             />
           </Box>
         </Flex>

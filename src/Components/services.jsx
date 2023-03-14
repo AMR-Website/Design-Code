@@ -8,7 +8,9 @@ import {
   Container,
   Avatar,
   useColorModeValue,
+  Button,
 } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -71,10 +73,10 @@ const TestimonialAvatar = ({ src, name, title }) => {
       <Avatar src={src} alt={name} mb={2} />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
+        <Text fontSize={"sm"} colo  r={useColorModeValue("gray.600", "gray.400")}>
           {title}
         </Text>
-      </Stack>
+      </Stack>                                                                                                                                            
     </Flex>
   );
 };
@@ -90,6 +92,7 @@ export default function Services() {
             business in core sectors such as Mining, Constructions,
             Infrastructure and Energy.{" "}
           </Text>
+
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -102,6 +105,21 @@ export default function Services() {
                 AMR India Limited has annual mining capacity of over 65 million
                 cubic meters.
               </TestimonialText>
+              <Link to="/mining">
+     <Button
+     width={'130px'}
+      rounded={"full"}
+      size={"lg"}
+      fontWeight={"normal"}
+      px={6}
+      colorScheme={"red"}
+      bg={"red.400"}
+      _hover={{ bg: "red.500" }}
+      ml="0%"
+height='30px'
+
+     >Know More</Button>
+</Link>
             </TestimonialContent>
            
           </Testimonial>
@@ -113,6 +131,22 @@ export default function Services() {
                 Buildings, Housing projects, Roads and other related Infra
                 works.
               </TestimonialText>
+              <Link to="/construction">
+     <Button
+      rounded={"full"}
+     width={'130px'}
+
+      size={"lg"}
+      fontWeight={"normal"}
+      px={6}
+      colorScheme={"red"}
+      bg={"red.400"}
+      _hover={{ bg: "red.500" }}
+      ml="0%"
+height='30px'
+
+     >Know More</Button>
+</Link>
             </TestimonialContent>
             
           </Testimonial>
@@ -123,7 +157,20 @@ export default function Services() {
                 AMR India Limited is equipped with the requisite expertise and
                 wide-ranging experience to undertake its projects on EPC,
                 turnkey basis .
-              </TestimonialText>
+              </TestimonialText> <Link to="/irrigation">
+     <Button
+      rounded={"full"}
+     width={'130px'}
+height='30px'
+      size={"lg"}
+      fontWeight={"normal"}
+      px={6}
+      colorScheme={"red"}
+      bg={"red.400"}
+      _hover={{ bg: "red.500" }}
+      ml="0%"
+     >Know More</Button>
+</Link>
             </TestimonialContent>
             
           </Testimonial>

@@ -40,7 +40,7 @@ export default function Vision() {
         py={10}>
         <PriceWrapper>
           <Box py={4} px={12}>
-            <Text fontWeight="500" fontSize="2xl">
+            <Text fontWeight="500" fontSize="2xl" _hover={{ textDecoration: 'none',color:"black" }}>
               Vision
             </Text>
             
@@ -65,7 +65,7 @@ export default function Vision() {
           <Box position="relative">
            
             <Box py={4} px={12}>
-              <Text fontWeight="500" fontSize="2xl">
+              <Text fontWeight="500" fontSize="2xl" _hover={{ textDecoration: 'none',color:"black" }}>
                 Mission
               </Text>
            
@@ -88,7 +88,7 @@ export default function Vision() {
         </PriceWrapper>
         <PriceWrapper>
           <Box py={4} px={12}>
-            <Text fontWeight="500" fontSize="2xl">
+            <Text fontWeight="500" fontSize="2xl" _hover={{ textDecoration: 'none',color:"black" }}>
               Values
             </Text>
            

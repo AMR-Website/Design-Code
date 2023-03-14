@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   Box,
   Heading,
@@ -16,7 +16,7 @@ import {
   VStack,
   Button,
 } from '@chakra-ui/react';
-
+import AOS from "aos"
 import MiningImg from '../Images/home/Mining.JPG'
 
 const BlogTags= (props) => {
@@ -52,8 +52,16 @@ const BlogTags= (props) => {
 // };
 
 const Mining = () => {
+  useEffect(()=>{
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  })
   return (
-    <Container maxW={'7xl'} p="12">
+    <Container maxW={'7xl'} p="12" data-aos="fade-up">
       <Heading as="h1">Our Service In Mining</Heading>
       <Box
         marginTop={{ base: '1', sm: '5' }}
@@ -119,6 +127,7 @@ const Mining = () => {
 
       </Box>
      <Box>
+      <Link to="/mining">
      <Button
       rounded={"full"}
       size={"lg"}
@@ -129,7 +138,7 @@ const Mining = () => {
       _hover={{ bg: "red.500" }}
       ml="50%"
      >Know More</Button>
-
+</Link>
      </Box>
       <Divider marginTop="5" />
      

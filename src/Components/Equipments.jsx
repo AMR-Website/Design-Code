@@ -1,50 +1,82 @@
 import React from 'react';
-import { Box, Badge, SimpleGrid, Container, Image, Link, Text } from '@chakra-ui/react';
-
+import { Box, Badge, SimpleGrid, Container, Image, Link, Text, Divider, Heading } from '@chakra-ui/react';
+import Image1 from "../Images/Equipments/Picture1.jpg"
+import Image2 from "../Images/Equipments/Picture2.jpg"
+import Image3 from "../Images/Equipments/Picture3.jpg"
+import Image4 from "../Images/Equipments/Picture4.jpg"
+import Image5 from "../Images/Equipments/Picture5.jpg"
+import Image6 from "../Images/Equipments/Picture6.jpg"
+import Image7 from "../Images/Equipments/Picture7.jpg"
+import { SettingsIcon, WarningTwoIcon } from '@chakra-ui/icons';
 const dataList = [
   {
     id: 1,
-    title: 'Rails ActiveAdmin',
-    authorName: 'Ali',
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    title: 'EXCAVATORS ',
+    authorName: '84',
+    Image : Image1,
+
   },
   {
     id: 2,
-    title: 'Rails ActiveAdmin',
-    authorName: 'Ali',
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    title: 'DUMPTRUCKS ',
+    authorName: '38',
+    Image : Image2,
+
   },
   {
     id: 3,
-    title: 'Rails ActiveAdmin',
-    authorName: 'Ali',
-    content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
+    title: 'TIPPERS ',
+    authorName: '204',
+    Image : Image3,
+  }
+  ,
+  {
+    id: 4,
+    title: 'DOZERS ',
+    authorName: '33',
+    Image : Image4,
+  },
+  {
+    id: 5,
+    title: 'GRADERS ',
+    authorName: '09',
+    Image : Image5,
+  },
+  {
+    id: 6,
+    title: 'LOADERS ',
+    authorName: '04',
+    Image : Image6,
+  }
+  ,
+  {
+    id: 7,
+    title: 'COMPACTORS ',
+    authorName: '19',
+    Image : Image7,
   }
 ];
 
 const Equipement = () => {
   return (
+
+    
     <Container maxWidth="1200px" mx="auto" my="auto" p={{ base: 5, md: 10 }}>
-    <Box >
-        <Text   fontSize={'2xl'} color="black" as={'b'} ml="-80%">
-        EQUIPMENT
+    <Box textAlign="center" py={10} px={6}>
+      <SettingsIcon boxSize={'50px'} color={'orange.300'} />
+      <Heading as="h2" size="xl" mt={6} mb={2}>
+      EQUIPMENTS
+      </Heading>
+      <Text color={'gray.500'}>
+      We equipped with full fleet of  heavy earthmoving equipment to full fill our requirement of Mining /Irrigation/Highways  and hydropower projects.
 
-        </Text>
-
-        <Text fontSize={'1xl'}  margin={'auto'} color={'black'} mb='60px' mt={'10px'} ml='-50px'>
-        We equipped with full fleet of  heavy earthmoving equipment to full fill our requirement of Mining /Irrigation/Highways  and hydropower projects.
-
-        </Text>
+      </Text>
     </Box>
       <SimpleGrid columns={[1, 2, 3]} spacing="15px">
         {dataList.map((blog) => {
           return (
             <Box position="relative" key={blog.id}>
-              <Box fontSize="sm" position="absolute" right="5px" margin="5px" zIndex="1">
-                <Badge rounded="full" p="2px 8px" colorScheme="red" as="button">
-                  Delete
-                </Badge>
-              </Box>
+              
               <Link to="#">
                 <Box
                   borderWidth="1px"
@@ -52,8 +84,9 @@ const Equipement = () => {
                   rounded="lg"
                   overflow="hidden"
                   position="relative"
+                  mt={'100px'}
                 >
-                  <Image src="https://bit.ly/2Z4KKcF" alt="Blog image" />
+                  <Image src={blog.Image} alt="Blog image" />
                   <Box p={{ base: 4, lg: 6 }}>
                     <Box d="flex" alignItems="baseline">
                       <Box
@@ -67,8 +100,8 @@ const Equipement = () => {
                       </Box>
                     </Box>
                     <Box>
-                      <Box color="gray.600" fontSize="sm">
-                        <Badge rounded="full" px="2" colorScheme="teal">
+                      <Box color="gray.600" fontSize="xl">
+                        <Badge rounded="half" fontSize={'18px'} px="20" colorScheme="teal" mt={'15px'}>
                           {blog.authorName}
                         </Badge>
                       </Box>

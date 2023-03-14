@@ -201,10 +201,10 @@ const Card = ({ id, title, description, date }) => {
         </Text>
 
         <VStack spacing={2} mb={3} textAlign="left">
-          <chakra.h1 fontSize="2xl" lineHeight={1.2} fontWeight="bold" w="100%">
+          <chakra.h1 fontSize="2xl" lineHeight={1.2} color="lightGreen" fontWeight="bold" w="100%">
             {title}
           </chakra.h1>
-          <Text fontSize="md">{description}</Text>
+          <Text fontSize="md"  color={'black'}>{description}</Text>
         </VStack>
       </Box>
     </HStack>
