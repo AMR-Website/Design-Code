@@ -1,6 +1,22 @@
-import { ArrowRightIcon } from '@chakra-ui/icons';
-import { Box, Divider, Grid, GridItem, Text } from '@chakra-ui/react';
-import ListGroup from 'react-bootstrap/ListGroup';
+import { ArrowRightIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Divider,
+  Grid,
+  GridItem,
+  Table,
+  TableCaption,
+  TableContainer,
+  Tbody,
+  Td,
+  Text,
+  Tfoot,
+  Th,
+  Thead,
+  Tr,
+} from "@chakra-ui/react";
+import ListGroup from "react-bootstrap/ListGroup";
+import TableOfContents from "./TableOfContents";
 
 function OngoingProjects() {
   return (
@@ -54,7 +70,7 @@ function OngoingProjects() {
             <ArrowRightIcon ml={"20px"} />{" "}
             <span style={{ marginLeft: "40px" }}>
               {" "}
-              Mine Developer Cum Operator of Kotare Basantpur Coal Block 
+              Mine Developer Cum Operator of Kotare Basantpur Coal Block
 
             </span>
           </GridItem>
@@ -69,7 +85,7 @@ function OngoingProjects() {
             <ArrowRightIcon ml={"20px"} />{" "}
             <span style={{ marginLeft: "40px" }}>
               {" "}
-              Mine Developer Cum Operator of Chatti Bariatu Coal Block 
+              Mine Developer Cum Operator of Chatti Bariatu Coal Block
 
             </span>
           </GridItem>
@@ -84,7 +100,7 @@ function OngoingProjects() {
             <ArrowRightIcon ml={"20px"} />{" "}
             <span style={{ marginLeft: "40px" }}>
               {" "}
-              Mine Developer Cum Operator for Tokisud North Coal Block 
+              Mine Developer Cum Operator for Tokisud North Coal Block
 
             </span>
           </GridItem>
@@ -99,7 +115,7 @@ function OngoingProjects() {
             <ArrowRightIcon ml={"20px"} />{" "}
             <span style={{ marginLeft: "40px" }}>
               {" "}
-              Mine Developer and Operator for development and Operation of Utkal D &E Coal Mine 
+              Mine Developer and Operator for development and Operation of Utkal D &E Coal Mine
 
             </span>
           </GridItem>
@@ -119,11 +135,8 @@ function OngoingProjects() {
             </span>
           </GridItem>
 
-
-          
         </Grid>
       </Box>
-   
 
       <Box >
         <Box mt="50px" textAlign={"left"} ml='30px'>
@@ -163,16 +176,9 @@ function OngoingProjects() {
 
             </span>
           </GridItem>
-          
-          
-          
-         
 
         </Grid>
       </Box>
-
-
-
 
       <Box>
         <Box mt="50px" textAlign={"left"} ml='30px'>
@@ -253,7 +259,7 @@ function OngoingProjects() {
             <ArrowRightIcon ml={"20px"} />{" "}
             <span style={{ marginLeft: "40px" }}>
               {" "}
-              Construction of Limited Height Subways Main Line, Srikakulam, AP 
+              Construction of Limited Height Subways Main Line, Srikakulam, AP
 
             </span>
           </GridItem>
@@ -272,14 +278,108 @@ function OngoingProjects() {
 
             </span>
           </GridItem>
-         
 
-
-          
         </Grid>
       </Box>
-   
+
     </Box>
+//     <TableContainer>
+//       <Table>
+//         <TableCaption>Imperial to metric conversion factors</TableCaption>
+//         <Thead>
+//           <Tr>
+//             <Th>S NO.</Th>
+//             <Th>Name of the Work</Th>
+//             <Th>Name of the Clients</Th>
+//             <Th isNumeric>Value of work</Th>
+//           </Tr>
+//         </Thead>
+//         <Tbody colorScheme="teal">
+//           <Tr>
+//             <Td>1</Td>
+//             <Td fontSize={'18px'} textAlign={"left"}>
+//               Hiring of HEMM for removal of OB, extraction and transportation of
+//               Coal <br /> with firefighting from VIIIA, V/VI/VII/VIII, IV(Top),
+//               IV(Bot), III(Top), III(Bot), <br /> II(Bot), I(Top) & I(Bot) seams
+//               of South Jharia OC Patch of ROCP of Bastacolla <br /> Area
+//             </Td>
+//             <Td fontSize={'18px'}>Bharat Coking Coal Limited</Td>
+
+//             <Td fontSize={'18px'} isNumeric>803.42</Td>
+//           </Tr>
+//           <Tr>
+//             <Td>2</Td>
+//             <Td textAlign={"left"}>
+//               Mine Developer Cum Operator for Tadicheral-I Coal Mine
+//             </Td>
+//             <Td>Telangana State Power Generation Corporation Limited</Td>
+
+//             <Td isNumeric>15000.00</Td>
+//           </Tr>
+
+//           <Tr>
+//             <Td>3</Td>
+//             <Td textAlign={"left"}>
+//               Development and Operationalization of Kotre Basantpur Coal Block
+//             </Td>
+//             <Td>Central Coalfields Limited</Td>
+
+//             <Td isNumeric>2395.68</Td>
+//           </Tr>
+
+//           <Tr>
+//             <Td>4</Td>
+//             <Td textAlign={"left"}>
+//               Development and Operation of Chatti Bariatu Coal Block
+//             </Td>
+//             <Td>NTPC Limited</Td>
+
+//             <Td isNumeric>1787.78</Td>
+//           </Tr>
+
+//           <Tr>
+//             <Td>5</Td>
+//             <Td textAlign={"left"}>
+//               Mine Developer cum Operator for Tokisud North Coal Block
+//             </Td>
+//             <Td>National Mineral Development Corporation</Td>
+
+//             <Td isNumeric>2182.38</Td>
+//           </Tr>
+
+//           <Tr>
+//             <Td>6</Td>
+//             <Td textAlign={"left"}>
+//               Exploration, Development & Operations of 25 Ha. Iron Ore bearing{" "}
+//               <br /> area in H. Siddapuram Village, D. Hirelal Mandal,
+//               Ananthapuram District, <br /> Andhra Pradesh on Raising Cum Sale
+//               Contract Basis
+//             </Td>
+//             <Td>Andhra Pradesh Mineral Development Corporation</Td>
+
+//             <Td isNumeric>882.00</Td>
+//           </Tr>
+//           <Tr>
+//             <Td>7</Td>
+//             <Td textAlign={"left"}>
+//               Mine Developer and Operator for development and Operation of Utkal
+//               D &E Coal Mine
+//             </Td>
+//             <Td>National Aluminium Company Limited</Td>
+
+//             <Td isNumeric>2083.80
+// </Td>
+//           </Tr>
+//         </Tbody>
+//         <Tfoot>
+//           <Tr>
+//             <Th as={'b'}>Total</Th>
+//             <Th>into</Th>
+//             <Th isNumeric>multiply by</Th>
+//           </Tr>
+//         </Tfoot>
+//       </Table>
+//     </TableContainer>
   );
 }
 

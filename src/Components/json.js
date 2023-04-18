@@ -76,16 +76,19 @@ export const json = {
       "title": "What position are you applying for?",
       "choices": [{
         "value": "frontend",
-        "text": "Frontend Developer"
+        "text": "IT"
       }, {
         "value": "backend",
-        "text": "Backend Developer"
+        "text": "Mining"
       }, {
         "value": "fullstack",
-        "text": "Full-Stack Developer"
+        "text": "Irrigation"
       }, {
         "value": "intern",
-        "text": "Intern"
+        "text": "Accounts"
+      }, {
+        "value": "intern",
+        "text": "Purchasing"
       }]
     }, {
       "type": "text",

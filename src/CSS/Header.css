@@ -1,0 +1,47 @@
+.slider_mini_conatainer{
+    /* position: absolute; */
+    /* border: 2px solid red; */
+    width: 99%;
+height: 70vh;
+margin: auto;
+/* Inside auto layout */
+
+
+}
+.welcome_note{
+    position: absolute;
+    width: 552px;
+    /* border: 2px solid red; */
+
+    height: 49px;
+    left: 30%;
+    top: 160px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 58px;
+    
+    color: #FFFFFF;
+
+}
+
+.welcome_note2{
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    left: 30%;
+    top: 230px;
+    /* border: 2px solid red; */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+    
+    
+    color: #FFFFFF;
+}

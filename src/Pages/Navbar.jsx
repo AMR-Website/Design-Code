@@ -30,11 +30,11 @@ const Navbar = () => {
 
 
     return (
-        <Box>
+        <Box >
           <Flex
             bg={useColorModeValue('white', 'gray.800')}
             color={useColorModeValue('gray.600', 'white')}
-            minH={'60px'}
+            minH={'70px'}
             py={{ base: 2 }}
             px={{ base: 4 }}
             borderBottom={1}
@@ -55,8 +55,10 @@ const Navbar = () => {
               />
             </Flex>
             <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-             <Stack width={'90px'} >
+             <Stack width={'100px'} mt={'3px'}>
+              <Link to={'/'}>
              <Image  src={Logo}   />
+             </Link>
              </Stack>
               <Stack
                justify={'flex-end'}
@@ -64,9 +66,9 @@ const Navbar = () => {
                spacing={6}
               
               >
-              <Flex display={{ base: 'none', md: 'flex' ,}} ml={10}>
+              <Box display={{ base: 'none', md: 'flex' ,}} mt={'14px'} ml={'330px'} >
                 <DesktopNav />
-              </Flex>
+              </Box>
 
               </Stack>
              
@@ -89,7 +91,7 @@ const DesktopNav = () => {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
-      <Stack direction={'row'} spacing={4}>
+      <Stack direction={'row'} spacing={9}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -235,21 +237,7 @@ const DesktopNav = () => {
           // subLabel: 'An exclusive list for contract work',
           href: '/',
         },
-    {
-      label: 'Projects',
-      children: [
-        {
-          label: 'Ongoing Projects',
-          // subLabel: 'See our Ongoing Projects ',
-          href: '/ongoingProjects',
-        },
-        {
-          label: 'Completed Projects',
-          // subLabel: 'See our Completed Projects',
-          href: '/completedProjects',
-        },
-      ],
-    },  {
+     {
       label: 'Services',
       children: [
         {
@@ -265,6 +253,41 @@ const DesktopNav = () => {
           label: 'Irrigation',
           // subLabel: 'See our Completed Projects',
           href: '/irrigation',
+        },
+      ],
+    },
+    {
+      label: 'Projects',
+      children: [
+        {
+          label: 'Ongoing Projects',
+          // subLabel: 'See our Ongoing Projects ',
+          href: '/ongoingProjects',
+        },
+        {
+          label: 'Completed Projects',
+          // subLabel: 'See our Completed Projects',
+          href: '/completedProjects',
+        },
+      ],
+    },
+   
+    {
+      label: 'Equipmets',
+      href: 'equipement',
+    },
+    {
+      label: 'Media',
+      children: [
+        {
+          label: 'Gallery',
+          // subLabel: 'See our Ongoing Projects ',
+          href: '/gallery',
+        },
+        {
+          label: 'Certificates',
+          // subLabel: 'See our Completed Projects',
+          href: '/certificates',
         },
       ],
     },
@@ -293,29 +316,10 @@ const DesktopNav = () => {
         },
       ],
     },
-    {
-      label: 'Equipmets',
-      href: 'equipement',
-    },
-    {
-      label: 'Media',
-      children: [
-        {
-          label: 'Gallery',
-          // subLabel: 'See our Ongoing Projects ',
-          href: '/gallery',
-        },
-        {
-          label: 'Certificates',
-          // subLabel: 'See our Completed Projects',
-          href: '/certificates',
-        },
-      ],
-    },
-    {
-      label: 'Carrers',
-      href: '/carrers',
-    },
+    // {
+    //   label: 'Carrers',
+    //   href: '/carrers',
+    // },
   ];
 
 export default Navbar

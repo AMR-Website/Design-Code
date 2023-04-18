@@ -35,7 +35,8 @@ export default function Aboutus() {
               About AMR Group!
             </Text>
           </Heading>
-          <Text color={"gray.500"} textAlign="left">
+            
+          <Text fontSize={'lg'}  color={"gray.500"} textAlign="left">
             AMR India Limited was established as a partnership firm in the year
             1992, under the dynamic leadership of Mr. A. Mahesh Reddy. The
             company has diversified into various verticals such as mining,

@@ -19,13 +19,13 @@ const HomePage = () => {
         {/* <h1 > HomePage</h1> */}
         <div data-aos="fade-left">
          {/* <Header  /> */}
-         <Trail />
+         <Header />
          </div>
 <div data-aos="fade-left">
          <Aboutus />
          </div>
 
-         <div data-aos="flip-up">
+         <div data-aos="flip-left-up">
          <Mining />
          </div>
 

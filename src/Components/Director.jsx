@@ -190,7 +190,6 @@ const Director = () => {
                                     
                                 </ListItem>
                                 <ListItem fontSize='28px'>
-                                <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. N Durga Prasad, Vice president – Mining </Text>
                                    
                                      
                                 </ListItem>
@@ -249,7 +248,6 @@ const Director = () => {
                                 </ListItem>
                                 <ListItem fontSize='28px'>
                                     
-                                    <Text fontSize={'22px'} color='black' as={'b'}>  <ListIcon as={MdCheckCircle} color='green.500' h="30px" w="50px" />   Mr. K.S.N. Murthy, General Manager  </Text>
 
                                 </ListItem>
                                 <ListItem fontSize='28px'>

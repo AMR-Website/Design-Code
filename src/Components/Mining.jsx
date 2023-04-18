@@ -115,10 +115,11 @@ const Mining = () => {
           <Text
             as="p"
             marginTop="5"
-            color={useColorModeValue('gray.700', 'gray.200')}
+            // color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg"
+            color={"gray.500"}
             textAlign={'left'}>
-           The mining division of AMR INDIA LIMITED has its core operations in mineral rich belt of INDIA. Right from planning, designing, execution and till mine closure in the most possible environmentally sustainable manner. 
+           The mining division of AMR INDIA LIMITED has its core operations in mineral rich belt of India. Right from planning, designing, execution and till mine closure in the most possible environmentally sustainable manner. 
            AMR India Limited holds a leading position in the Indian mining industry for its superior mining techniques, equipment, flexibility in operations and systems with zero tolerance in safety and sustainability.
            The company has capability of dealing with most of core minerals including Coal, Limestone, Lignite, Manganese, Iron ore & Bauxite.
 
