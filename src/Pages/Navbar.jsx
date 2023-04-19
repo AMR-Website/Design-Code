@@ -66,7 +66,7 @@ const Navbar = () => {
                spacing={6}
               
               >
-              <Box display={{ base: 'none', md: 'flex' ,}} mt={'14px'} ml={'330px'} >
+              <Box display={{ base: 'none', md: 'flex' ,}} mt={'14px'} ml={'630px'} >
                 <DesktopNav />
               </Box>
 
