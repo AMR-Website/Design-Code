@@ -35,6 +35,7 @@ const Navbar = () => {
             bg={useColorModeValue('white', 'gray.800')}
             color={useColorModeValue('gray.600', 'white')}
             minH={'70px'}
+            
             py={{ base: 2 }}
             px={{ base: 4 }}
             borderBottom={1}
@@ -54,8 +55,8 @@ const Navbar = () => {
                 aria-label={'Toggle Navigation'}
               />
             </Flex>
-            <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-             <Stack width={'100px'} mt={'3px'}>
+            <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start'  }} >
+             <Stack width={'160px'} mt={'3px'}>
               <Link to={'/'}>
              <Image  src={Logo}   />
              </Link>
@@ -64,9 +65,9 @@ const Navbar = () => {
                justify={'flex-end'}
                direction={'row'}
                spacing={6}
-              
+              // border="2px solid"
               >
-              <Box display={{ base: 'none', md: 'flex' ,}} mt={'14px'} ml={'630px'} >
+              <Box display={{ base: 'none', md: 'flex' ,}}  mt={'20px'} ml={"300px"} >
                 <DesktopNav />
               </Box>
 
@@ -91,7 +92,7 @@ const DesktopNav = () => {
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
-      <Stack direction={'row'} spacing={9}>
+      <Stack direction={'row'} spacing={14} >
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -99,7 +100,7 @@ const DesktopNav = () => {
                 <Link
                   p={2}
                   to={navItem.href ?? '#'}
-                  fontSize={'sm'}
+                  fontSize={'20px'}
                   fontWeight={500}
                   color={linkColor}
                   _hover={{

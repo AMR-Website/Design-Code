@@ -63,7 +63,7 @@ const Construction = () => {
   return (
     <Container maxW={"7xl"} p="12">
       <Heading
-        color={"red"}
+        color={"red.400"}
         _hover={{ color: "orange", textDecoration: "none" }}
         as="h1"
       >
@@ -118,7 +118,7 @@ const Construction = () => {
         >
           <Heading marginTop="1">
             <Link
-              color={"green"}
+              color={"red.400"}
               textDecoration="none"
               _hover={{ color: "orange", textDecoration: "none" }}
             >

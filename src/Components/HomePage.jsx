@@ -7,6 +7,7 @@ import Mining from './Mining'
 import Services from './services'
 import AOS from "aos"
 import "aos/dist/aos.css"
+import Clients from './Clients'
 const HomePage = () => {
 
   useEffect(()=>{
@@ -32,6 +33,8 @@ const HomePage = () => {
          <div data-aos="fade-up-right">
          <Services />
          </div>
+
+         <Clients/>
        
     </>
   )

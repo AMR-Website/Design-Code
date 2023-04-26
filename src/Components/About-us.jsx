@@ -28,11 +28,11 @@ export default function Aboutus() {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+            fontSize={{ base: "3xl", sm: "4xl", lg: "4xl" }}
           >
             <br />
             <Text as={"span"} color={"red.400"}>
-              About AMR Group!
+              About AMR Group
             </Text>
           </Heading>
             
@@ -41,7 +41,7 @@ export default function Aboutus() {
             1992, under the dynamic leadership of Mr. A. Mahesh Reddy. The
             company has diversified into various verticals such as mining,
             irrigation and construction and have excellent reputation in the
-            industry. During the course of time, AMR India Limited has scaled
+            industry. During the course of time,AMR India Limited has scaled
             enormous heights and successfully executed various civil projects
             across India and Nepal. The Group executed prestigious projects for
             some of the most reputed companies like India Cements, Madras
@@ -92,18 +92,18 @@ export default function Aboutus() {
             width={"full"}
             overflow={"hidden"}
           >
-            <IconButton
+            {/* <IconButton
               aria-label={"Play Button"}
               variant={"ghost"}
               _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
+              // icon={<PlayIcon w={12} h={12} />}
               size={"lg"}
               color={"white"}
               position={"absolute"}
               left={"50%"}
               top={"50%"}
               transform={"translateX(-50%) translateY(-50%)"}
-            />
+            /> */}
             <Image
               alt={"Hero Image"}
               fit={"cover"}

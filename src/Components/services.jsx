@@ -86,8 +86,8 @@ export default function Services() {
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
       <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={"center"}>
-          <Heading>What we do</Heading>
-          <Text>
+          <Heading color="red.400">What we do</Heading>
+          <Text color="black.500">
             AMR Group is a fast growing business conglomerate with focus on
             business in core sectors such as Mining, Constructions,
             Infrastructure and Energy.{" "}
@@ -101,7 +101,7 @@ export default function Services() {
           <Testimonial>
             <TestimonialContent>
               <TestimonialHeading>Mining</TestimonialHeading>
-              <TestimonialText>
+              <TestimonialText >
                 AMR India Limited has annual mining capacity of over 65 million
                 cubic meters.
               </TestimonialText>

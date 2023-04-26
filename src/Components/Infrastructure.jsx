@@ -62,15 +62,7 @@ export default function CallToActionWithVideo() {
             >
               Get started
             </Button>
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
-            >
-              How It Works
-            </Button>
+            
           </Stack>
         </Stack>
         <Flex
@@ -97,7 +89,7 @@ export default function CallToActionWithVideo() {
             width={"full"}
             overflow={"hidden"}
           >
-            <IconButton
+            {/* <IconButton
               aria-label={"Play Button"}
               variant={"ghost"}
               _hover={{ bg: "transparent" }}
@@ -108,7 +100,7 @@ export default function CallToActionWithVideo() {
               left={"50%"}
               top={"50%"}
               transform={"translateX(-50%) translateY(-50%)"}
-            />
+            /> */}
             <Image
               alt={"Hero Image"}
               fit={"cover"}

@@ -65,7 +65,7 @@ const MiningPage = () => {
   return (
         
     <Container maxW={"7xl"} p="12" >
-      <Heading             _hover={{ color:"orange", textDecoration: "none" }}
+      <Heading    color="red.400"          _hover={{ color:"orange", textDecoration: "none" }}
  as="h1">Our Mining Service</Heading>
       <Box
         marginTop={{ base: "1", sm: "5" }}
@@ -118,6 +118,7 @@ const MiningPage = () => {
         >
           <Heading marginTop="1">
             <Link
+            color="red.400"
               textDecoration="none"
               _hover={{ color: "orange", textDecoration: "none" }}
             >

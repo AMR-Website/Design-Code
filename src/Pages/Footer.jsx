@@ -25,7 +25,10 @@ export default function Footer() {
             justifyContent="center"
             alignItem={"center"}
           >
-            <Box  width={"30%"}>
+            <Box  width={"30%"}
+      // border="2px solid "
+            
+            >
               <Image src={Logo} width={"60%"} margin="auto"/>
               <Text textAlign={"justify"}
       color={useColorModeValue("black")}
@@ -38,7 +41,9 @@ export default function Footer() {
                 Infrastructure and Energy.{" "}
               </Text>
             </Box>
-            <Box  width={"30%"} >
+            <Box  width={"30%"} 
+      // border="2px solid "
+            >
               <Text textAlign={"center"}
               mt="25px"
       color={useColorModeValue("orange.500")}
@@ -62,10 +67,10 @@ export default function Footer() {
             // ml="-20px"
             // border="2px solid"
             >
-          <Text textAlign={"left"}
+          <Text textAlign={"center"}
       color={useColorModeValue("orange.500")}
       fontSize={"25px"} 
-      ml="3px"
+      // ml="3px"
       // border="2px solid"
 width="100%"
       mt="25px">Contact Information</Text>
@@ -74,19 +79,23 @@ width="100%"
 
       color={useColorModeValue("black")}
       fontSize={"20px"}
-      width="200px"
+      // width="200px"
       mb="12px" 
       mt="60px"
+      // ml="-10px"
+      // width="100%"
       // border="2px solid "
-      ml="-3px"
+
       >  040-4757-0009</Text>
           <Text textAlign={"center"}
 
       color={useColorModeValue("black")}
-      ml="-32px"
+      // ml="-32px"
+      // border="2px solid "
+       ml="15px"
       fontSize={"20px"} >info@amrgroup.in</Text>
             </Box>
-          <Box >
+          <Box>
             <Box mt="50px">
             <Link href="www.facebook.com" >
             <ImFacebook2 />

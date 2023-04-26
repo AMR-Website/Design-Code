@@ -62,7 +62,7 @@ const Mining = () => {
   })
   return (
     <Container maxW={'7xl'} p="12" data-aos="fade-up">
-      <Heading as="h1">Our Service In Mining</Heading>
+      {/* <Heading as="h1" >Our Service In Mining</Heading> */}
       <Box
         marginTop={{ base: '1', sm: '5' }}
         display="flex"
@@ -107,7 +107,7 @@ const Mining = () => {
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
           {/* <BlogTags tags={['Engineering', 'Product']} /> */}
-          <Heading marginTop="1">
+          <Heading marginTop="1" color={'red.400'}>
             <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
               Mining
             </Link>
